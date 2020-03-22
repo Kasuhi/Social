@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://kobra:kobra@cluster0-7hqwd.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "sadtoken"
+}
