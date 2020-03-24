@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://kobra:kobra@cluster0-7hqwd.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "sadtoken"
+  "jwtSecret": "sadtoken",
+  "githubClientId": "42bc58c34f9f58e71951",
+  "githubSecret": "ae6ccdeb1a5d22f8f0c59efee792c352ac5f9e31"
 }
