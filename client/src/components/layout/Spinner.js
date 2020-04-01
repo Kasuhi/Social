@@ -3,6 +3,7 @@ import React, { Fragment } from 'react';
 export default () => (
   <Fragment>
     <iframe
+      title='Loading spinner'
       src='https://gfycat.com/ifr/ConventionalOblongFairybluebird'
       frameborder='0'
       scrolling='no'
