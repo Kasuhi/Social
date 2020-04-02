@@ -5,9 +5,9 @@ export default () => (
     <iframe
       title='Loading spinner'
       src='https://gfycat.com/ifr/ConventionalOblongFairybluebird'
-      frameborder='0'
+      frameBorder='0'
       scrolling='no'
-      allowfullscreen
+      allowFullScreen
       width='640'
       height='684'
     ></iframe>

@@ -69,11 +69,14 @@ router.post(
     profileFields.user = req.user.id;
     if (company) profileFields.company = company;
     if (website) profileFields.website = website;
+    if (location) profileFields.location = location;
     if (bio) profileFields.bio = bio;
     if (status) profileFields.status = status;
     if (githubgusername) profileFields.githubgusername = githubgusername;
     if (skills) {
-      profileFields.skills = skills.split(',').map(skill => skill.trim());
+      profileFields.skills = Array.isArray(skills)
+        ? skills
+        : skills.split(',').map(skill => ' ' + skill.trim());
     }
 
     // Build social object
