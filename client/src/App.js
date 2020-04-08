@@ -14,6 +14,7 @@ import Profiles from './components/profiles/Profiles';
 import Profile from './components/profile/Profile';
 import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
+import NotFound from './components/layout/NotFound';
 import PrivateRoute from './components/routing/PrivateRoute';
 //redux
 import { Provider } from 'react-redux';
@@ -36,11 +37,12 @@ const App = () => {
       <Router>
         <Fragment>
           <Navbar />
-          <Route exact path='/' component={Landing} />
-          <section className='container'>
-            <Alert />
 
-            <Switch>
+          <Alert />
+
+          <Switch>
+            <Route exact path='/' component={Landing} />
+            <section className='container'>
               <Route exact path='/register' component={Register} />
               <Route exact path='/login' component={Login} />
               <Route exact path='/profiles' component={Profiles} />
@@ -68,8 +70,9 @@ const App = () => {
               />
               <PrivateRoute exact path='/posts' component={Posts} />
               <PrivateRoute exact path='/post/:id' component={Post} />
-            </Switch>
-          </section>
+              <Route component={NotFound} />
+            </section>
+          </Switch>
         </Fragment>
       </Router>
     </Provider>
